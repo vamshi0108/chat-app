@@ -45,11 +45,26 @@
           <span class="message__name">{{userName}}</span>
           <span class="message__meta">{{createdAt}}</span>
         </p>
-        <span><a href="{{location}}" target="_blank">My current location</a></span>
+        <span>
+          <a href="{{location}}" target="_blank"
+            ><img src="/img/location.png" alt="" class="logo" /></a
+        ></span>
       </div>
     </script>
 
     <script id="sidebar-template" type="text/html">
+      <div class="site-header">
+        <div class="container">
+          <a href="" class="branding">
+            <img src="/img/logo.png" alt="" class="logo" />
+            <div class="logo-type">
+              <h1 class="site-title">VAYS</h1>
+              <small class="site-description">Chatting Application</small>
+            </div>
+          </a>
+        </div>
+      </div>
+      <h3 class="list-title"></h3>
       <h2 class="room-title">{{room}}</h2>
       <h3 class="list-title">Users</h3>
       <ul class="users">
