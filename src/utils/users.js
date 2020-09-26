@@ -1,6 +1,8 @@
 const users = [];
 
 const addUser = ({ id, userName, room }) => {
+  userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
+  room = room.trim().toUpperCase();
   if (!userName || !room)
     return {
       error: "username or room required!",

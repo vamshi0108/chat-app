@@ -431,21 +431,32 @@ button:disabled {
 /* Chat Sidebar Styles */
 
 .room-title {
-  font-weight: 400;
+  font-weight: 550;
   font-size: 22px;
   background: #2c2f3a;
   padding: 12px 12px 12px 24px;
+  font-family: sans-serif;
 }
 
 .list-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   margin-bottom: 4px;
   padding: 12px 24px 0 24px;
+  font-family: sans-serif;
+  color: #f5ae53;
 }
 
 .users {
   list-style-type: none;
   font-weight: 300;
   padding: 12px 24px 0 24px;
+  font-family: sans-serif;
+}
+
+.users-list {
+  background: linear-gradient(to right, #333744, #2c2f3a, #333744);
+  border-top: 5px #2c2f3a;
+  padding: 10px 10px 2px 10px;
+  font-family: sans-serif;
 }
