@@ -1,7 +1,7 @@
 const socket = io();
 const $messageForm = document.querySelector("#message-form");
-const $messageFormInput = document.querySelector("#message");
-const $messageFormButton = document.querySelector("#message-form");
+const $messageFormInput = document.querySelector("input");
+const $messageFormButton = document.querySelector("button");
 const $sendLocation = document.querySelector("#send-location");
 const $messageTemplate = document.querySelector("#message-template").innerHTML;
 const $locationTemplate = document.querySelector("#location-template").innerHTML;
@@ -48,7 +48,7 @@ socket.on("messageLocation", (location) => {
   const html = Mustache.render($locationTemplate, {
     userName: location.userName,
     location: location.text,
-    createdAt: moment(message.createdAt).format("hh:mm a"),
+    createdAt: moment(location.createdAt).format("hh:mm a"),
   });
   $messages.insertAdjacentHTML("beforeend", html);
   autoscroll();
