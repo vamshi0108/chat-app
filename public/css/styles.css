@@ -1,5 +1,3 @@
-@use postcss-cssnext;
-
 /* config.css */
 
 :root {
@@ -54,6 +52,12 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.header {
+  height: 65;
+  width: auto;
+}
+
 .site-header .branding .logo {
   margin-right: 10px;
 }
